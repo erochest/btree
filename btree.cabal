@@ -16,23 +16,12 @@ build-type:          Simple
 cabal-version:       >=1.10
 
 library
-  -- exposed-modules:     
+  exposed-modules:     BTree.Types
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base >=4.8 && <4.9
-  -- hs-source-dirs:      
+  hs-source-dirs:      src
   default-language:    Haskell2010
-executable btree
-  main-is:             Main.hs
-  -- other-modules:       
-  -- other-extensions:    
-  build-depends:       base >=4.8 && <5
-                     , btree
-                     , text
-                     , optparse-applicative
-  -- hs-source-dirs:      .
-  default-language:    Haskell2010
-
 
 test-suite btree-specs
   type:                exitcode-stdio-1.0
